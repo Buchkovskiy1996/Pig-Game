@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 24px;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 140px auto;
+    padding: 0 5px;
+}
+
+body {
+    background: rgb(111, 111, 151);
+    height: 100vh;
+}
+
+.main {
+    max-width: 980px;
+    margin: 0 auto;
+    border-radius: 20px;
+    position: relative;
+}
+
+.block__flex {
+    display: flex;
+}
+
+.section--active {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.section__left {
+    flex: 50%;
+    height: 590px;
+    border-radius: 20px;
+    right: 6px;
+    position: relative;
+}
+.section__right {
+    flex: 50%;
+    border-radius: 20px;
+    position: relative;
+    left: 6px;
+    background-color: rgba(255, 255, 255, 0.2);
+
+}
+
+.player__text {
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+}
+
+.score {
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(175, 74, 74);
+    font-size: 80px;
+    margin-bottom: 150px;
+}
+
+.block__current {
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 180px;
+    height: 120px;
+    background-color: #c7365f;
+    opacity: 0.8;
+    border-radius: 9px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #eee;
+}
+
+.current__text {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.score__current {
+    font-size: 40px;
+}
+
+.btn {
+    display: inline-block;
+    position: absolute;
+    color: rgb(99, 94, 94);
+    font-size: 24px;
+    font-weight: 500;
+    border-radius: 20px;
+    /* padding: 25px; */
+    border: none;
+    left:50%;
+    transform:translate(-50%, -50%);
+    text-transform: uppercase;
+}
+
+.img__dise {
+    display: inline-block;
+    width: 100px;
+    position: absolute;
+    left:50%;
+    transform:translate(-50%, -50%);
+    bottom: 45%;
+}
+
+.new__game {
+    top:10%;
+    height: 50px;
+    padding: 10px 45px;
+}
+
+.roll__dise {
+    padding: 10px 35px;
+    bottom: 18%;
+    height: 50px;
+}
+
+.hold {
+    padding: 10px 30px;
+    bottom: 5%;
+}
