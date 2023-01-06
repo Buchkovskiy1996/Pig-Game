@@ -11,13 +11,13 @@ html {
 
 .container {
     max-width: 1000px;
-    margin: 140px auto;
+    margin: 70px auto;
     padding: 0 5px;
 }
 
 body {
     background: rgb(111, 111, 151);
-    height: 100vh;
+    height: 80vh;
 }
 
 .main {
@@ -29,26 +29,26 @@ body {
 
 .block__flex {
     display: flex;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 17px;
+}
+.section__left {
+    flex: 50%;
+    height: 590px;
+    border-radius: 20px;
+    right: 1px;
+    position: relative;
 }
 
 .section--active {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-.section__left {
-    flex: 50%;
-    height: 590px;
-    border-radius: 20px;
-    right: 6px;
-    position: relative;
-}
 .section__right {
     flex: 50%;
     border-radius: 20px;
     position: relative;
-    left: 6px;
-    background-color: rgba(255, 255, 255, 0.2);
-
+    left: 1px;
 }
 
 .player__text {
@@ -104,9 +104,23 @@ body {
     left:50%;
     transform:translate(-50%, -50%);
     text-transform: uppercase;
+    cursor: pointer;
 }
 
-.img__dise {
+.btn:hover {
+    background-color: rgb(155, 146, 146);
+    color: #c7365f;
+}
+
+.btn:active {
+    transform: translate(-50%, -20px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.45);
+  }
+  .btn:focus {
+    outline: none;
+  }
+
+.img__dice {
     display: inline-block;
     width: 100px;
     position: absolute;
@@ -130,4 +144,8 @@ body {
 .hold {
     padding: 10px 30px;
     bottom: 5%;
+}
+
+.hidden {
+    display: none;
 }
